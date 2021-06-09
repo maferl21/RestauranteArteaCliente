@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.imgP{
+    width: 450px;
+}
+section{
+    width: 900px;
+    /* text-align: center; */
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+h1{
+    font-family: 'Times New Roman';  
+    font-size: 30px;
+    color: rgb(196, 25, 25);
+    grid-column: 1/-1;
+    text-align: center;
+}
+p{
+    font-family: Tahoma;
+}
+/* BOTON */
+.botonA{
+    font-family: Tahoma;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgb(255, 123, 0);
+    border-radius: 6px;
+    border: none;
+    /* border: 2px solid #999999; */
+}
+.botonA:hover{
+    color: rgb(255, 123, 0);
+    background-color: #ffffff;
+}
+.botonA:focus{ /*Lo ocupare para cuando este seleccionado y se vea en php*/
+    background-color: #ffffff;
+    color: rgb(255, 123, 0);
+    border: 1px solid #999999;
+}
+.cant-control{
+    font-family: Tahoma;
+    padding: 8px;
+    width: 60px;
+    color: #999999;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #999999;
+}
+
+/* GRID DE PROMOCIONES */
+/* contenedor de imagenes */
+.contenedorP{ 
+    align-content: center;
+    display: grid;
+    grid-template-columns:repeat(2, 50%);
+    padding: 0;
+    grid-gap: 50px;  /*este es para que haya sepación entre las filas*/
+}
+/*grid de descripciones de los productos  */
+.infoP{
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns:repeat(4, 25%);
+    padding: 0;
+}
+.des{
+  padding-left: 8px;
+  padding-right: 8px;
+  align-content: center;
+  padding-top: 15px;
+}
+.boxBoton{
+  padding-top: 20px;
+  text-align: center;
+
+} 
+.desT{
+  grid-column: 1/-1;
+  padding-top: 5px;
+}
+.desD{
+    grid-column: 1/3;
+    padding-top: 5px;
+}
+.desT{
+    align-items: rigth;
+}
+
+/* @media screen and (max-width:300px) { */
+@media screen and (max-width:768px) {
+    section{
+        width: 300px;
+        text-align: center;
+        /* margin-top: 0px; */
+        margin-left:15px;
+        /* margin: 0; */
+        /* background-color: tomato; */
+    }
+    .contenedorP{
+        grid-gap: 30px;
+    } 
+    .in-flex, .des{
+        grid-column: 1/-1;
+    }
+    .boxBoton{
+        text-align: center;
+    }
+    .infoP{
+        margin: 10px;
+    }
+    .imgP{
+        width: 300px;
+    }
+    h1{
+        font-size: 25px;
+    }
+}

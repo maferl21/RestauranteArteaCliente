@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    /* text-align: center; */
+    /* margin-left: auto; */
+    margin-right: auto;
+}
+.tabla{
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Tahoma !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tdB,th{
+    border: 1px solid #e0e0e0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.delete{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 15px;
+}
+.delete:hover{
+    background-color: #e0e0e0;
+    color: #000000;
+}
+.delete:focus{
+    background-color: #e0e0e0;
+    color: #ff0000;
+}
+.imgR{
+    width: 100px;
+}
+.contenedorC{ 
+    text-align: center;
+    /* align-content: center; */
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    font-family: 'Times New Roman';  
+    font-size: 30px;
+    color: rgb(196, 25, 25);
+    grid-column: 1/-1;
+    text-align: center;
+}
+#tot{
+    margin-left: 0px;
+    font-size: 30px;
+}
+.pagarB{
+    /* padding: 40px; */
+    width: 120px;
+    height: 58px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 238, 0);
+    color: #000000;
+    font-size: 15px;
+}
+.pagarB:hover{
+    background-color: #e0e0e0;
+    color: #000000;
+}
+.pagarB:focus{
+    background-color: #e0e0e0;
+    color: #ff5e00;
+}
+.tablaP{
+    width: 805px;
+    display: grid;
+    grid-template-columns:repeat(2, 50%);
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 0; /*este es para que haya sepación entre las filas */
+    background-color: rgb(247, 241, 165);
+}
+.box1{
+    padding-right: 240px;
+}
+.box2{
+    padding-left: 282px;
+}

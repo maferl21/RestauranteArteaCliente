@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Tahoma;
+}
+#logoF{
+    width: 200px;
+}
+.box ul{
+    list-style: none; 
+}
+.box li a{
+    text-decoration: none; /* Sin subrayado*/
+    color: white;
+}
+.box1{
+    padding-left: 30px;
+}
+.box{
+  padding: 20px;
+  padding-top: 30px;
+  color: white;
+}
+.contenedor{
+    background-color: #000000 !important;
+    color: white;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+} 
+.redes li{
+    display: inline-block;
+}
+.redes li a{
+    padding: 15px;
+    color: white;
+}
+.parrafo{
+    text-align: center;
+}
+
+/* RESPONSIVA */
+@media screen and (max-width:768px) {
+
+    /* .box1{
+        visibility: hidden;
+        display:none;
+    } */
+    #logoF{
+        width: 100px;
+    }
+    .contenedor{ 
+        grid-template-columns:repeat(2, 50%);
+    }
+    .redes li a{
+        padding: 5px;
+    }
+    .boxD{
+        grid-column: 1/-1;
+    }
+
+}

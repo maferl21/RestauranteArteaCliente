@@ -1,0 +1,71 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.resumen{
+    font-family: Tahoma !important;
+    /*text-align: center;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla{
+    border-collapse: collapse;
+    /* font-family: Tahoma !important; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.tdB,th{
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.div-tar{
+    text-align: center;
+}
+.todo{
+    /*align-content: center;*/
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    padding: 0;
+    grid-gap: 20px; /*este es para que haya sepación entre las filas */
+    margin-left: 20px;
+}
+.todo .todo2{
+    grid-column: span 2;
+    font-family: Tahoma;
+}
+/* REBIBO.PHP */
+.imprimirB{
+    /* padding: 40px; */
+    width: 120px;
+    height: 58px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(48, 61, 175);
+    color: #ffffff;
+    font-size: 15px;
+}
+.imprimirB:hover{
+    background-color: #e0e0e0;
+    color: #000000;
+}
+.imprimirB:focus{
+    background-color: #e0e0e0;
+    color: #0004ff;
+}
+h3{
+    font-family: 'Times New Roman';  
+    /*color: rgb(207, 75, 23);*/
+    color: rgb(25, 79, 196);
+}
+.gracias{
+    font-family: 'Times New Roman';  
+    font-size: 30px;
+    color: rgb(25, 196, 68);
+}

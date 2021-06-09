@@ -1,0 +1,14 @@
+section{
+    width: 1000px;
+    text-align: center;
+    font-family: 'Tahoma';
+    margin-top: 10px;
+    margin-left: 15%;
+}
+h1{
+  font-family: 'Times New Roman' !important;  
+  font-size: 30px;
+  text-align: center;
+  color: rgb(196, 25, 25);
+  grid-column: 1/-1;
+}

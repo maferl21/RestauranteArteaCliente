@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffffff;
+}
+.imgG{
+    width:100%;
+}
+#logo{
+    position: absolute;
+     /* position: relative; */
+    margin-top: 2px;
+    /* margin-left: 15%; */
+    margin-right: 0px;
+    padding-left: 100px;
+    float: left;
+    width: 130px;
+}
+#carrito{
+    background-color:rgb(255, 123, 0) !important;
+    color: white !important;
+}
+/*************** INICIO MENU*/
+/* div{ */ .divContenedor{
+    align-items: center;
+}
+nav{
+    background-color: #ffffff;
+    
+}
+nav ul{
+    list-style: none; /*Eliminar biñetas de la listas*/
+    text-align: center;
+    /* text-align: right; */
+    /* opcion 1 sin float: right; margin-right: 80px;*/
+    /* opcion 2 con float: right; margin-right: 80px;*/
+    float: right;
+    margin-right: 80px;
+} 
+#menu > li{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+#menu > li > a{ 
+    display: block; /* Para que lo haga bloque o al tamaño del padding*/
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none; /* Sin subrayado*/
+    font-family: Tahoma;
+}
+#mesa, #buscador{
+    display: block; /* Para que lo haga bloque o al tamaño del padding*/
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none; /* Sin subrayado*/
+    font-family: Tahoma;
+}
+#menu li a:hover{
+    color:rgb(255, 123, 0);
+}
+/*************** FIN MENU*/
+
+/*************** INICIO SUBMENU*/
+#submenu{
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.692); */
+   background-color: rgba(255, 255, 255, 0.774);
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+#submenu li a{
+    display: block;
+    padding: 15px;
+    color: black;
+    font-family: Tahoma;
+    text-decoration: none; /* Sin subrayado*/
+}
+#menu li:hover #submenu{
+    visibility: visible;
+    opacity: 1;
+}
+#submenu li a:focus{
+    background-color: rgb(167, 20, 20);
+    color: white;
+}
+/*************** FIN SUBMENU*/
+
+/*************** INICIO BUSCADOR*/
+#buscador{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 9px;
+    border: 1px solid gray;
+    width: 200px;
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+#contenedorB{
+    vertical-align: middle;
+}
+.buscar{
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 5px 0px;
+    border-radius: 50px;
+    /* font-size: 20; */
+    font-family: Tahoma;
+    color: gray;
+}
+.buscar:focus{
+    outline: none;
+}
+#lupa{
+    font-size: 25;
+    color:rgb(255, 123, 0);
+}
+/*************** FIN BUSCADOR*/
+/* .boton{
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-family: Tahoma;
+}
+.boton:focus{
+    color: white;
+} */
